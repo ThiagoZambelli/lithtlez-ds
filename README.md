@@ -1,3 +1,65 @@
+<div align="center">
+
+![Alt text](src/assets/logoLithtleZ.svg)
+
+&nbsp;
+
+---
+
+&nbsp;
+
+</div>
+
+
+<img align="left" width="40%" style="margin-top:-20px" src="./src/assets/eu.png">
+
+</br>
+</br>
+
+<div dsplay="inline-block">
+
+<h1 align="justify">Design System LithtleZ</h1>
+<h2 align="justify">Feito por : Thiago Zambelli</h2>
+<h3 align="justify">Projeto focado em ser o DS dos projetos criados pela LithtleZ</h3>
+ 
+  <a href="https://www.linkedin.com/in/thiagozambelli">
+    <img width="80px" src="https://i.ibb.co/RyZx12b/linkedin.png" alt="linkedin" style="vertical-align:top;">
+  </a>
+
+</div>
+
+- [Projeto](#projeto)
+- [Problemas e Soluções](#problemas__solucoes)
+- [README do TSDX](#tsdx)
+
+&nbsp;
+
+---
+
+# Projeto -> <div id='projeto'></div>
+> O projeto foi criado para servir de DS (design system) de todas as criações LithtleZ, deizando uniforme e padronizado todos os desenvolvimentos.
+
+## TSDX :
+> Para criação do projeto foi utilizado o TSDX, que consiste em uma ferramenta que gera e configura o ambinte para uma biblioteca em TS. [Aqui o link para o site do TSDX](https://tsdx.io/)
+
+## StoryBook :
+> O Storybook é um workshop de front-end, sua função é ser uma ferramenta para desenvolver componentes, documentação e testes isoladamente.
+
+&nbsp;
+
+---
+
+# Problemas e Soluções -> <div id='problemas__solucoes'></div>
+
+## Incompatibilidade do Node:
+> Com a atualização do `storybook` não consegui utilizar nem o npm nem o yarn para inicializa-lo, por tanto eu mudei a versão do `Node` com o `NVM` e mudei a versão do `storybook` descrita no package.json. Após isso eu exclui as dependencias do node_module e reinstalei, forçãdo a baixar a versão mais antiga do `storybook` e assim consegui roda-lo com o `npm run storybook`
+
+&nbsp;
+
+---
+
+# READEME do TSDX -> <div id='tsdx'></div>
+
 # TSDX React w/ Storybook User Guide
 
 Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
