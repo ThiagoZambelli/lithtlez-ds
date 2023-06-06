@@ -16,6 +16,7 @@ const BotaoEstilizado = styled.button<LzBotaoProps>`
     align-items: center;
     justify-content: center;
     column-gap: 1em;
+    row-gap: 1em;
     font-size: 1.3rem;
     padding: .5em 1em;
     cursor: pointer;
