@@ -22,3 +22,13 @@ Secundario.args = {
     tipo: 'secundario',
     forma: 'gota'
 } as LzBotaoProps
+
+export const testeDeCor = Template.bind({})
+testeDeCor.args = {
+    texto: 'LzBotao testeDeCor',
+    tipo: 'principal',
+    forma: 'gota',
+    corPrimaria: '#49C2EB',
+    corSecundaria: '#40F6C0',
+    corHover: '#4069F6',
+} as LzBotaoProps

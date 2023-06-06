@@ -1,12 +1,21 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
-import { LzCard } from '../src';
+import { LzCard, LzCardProps } from '../src';
 
 export default {
     title: 'Componentes/LzCard',
     component: LzCard
 } as ComponentMeta<typeof LzCard>
 
-const Template: ComponentStory<typeof LzCard> = () => <LzCard />
+const Template: ComponentStory<typeof LzCard> = (args) => <LzCard {...args}/>
 
-export const Primario = Template.bind({})
+export const Normal = Template.bind({})
+Normal.args = {
+    children: 'Aqui um card Comum'
+} as LzCardProps
+
+export const BgAlterado = Template.bind({})
+BgAlterado.args = {
+    children: 'Aqui um card BgAlterado',
+    bgColor: '#40F6C0'
+} as LzCardProps
