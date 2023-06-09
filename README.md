@@ -29,6 +29,7 @@
 </div>
 
 - [Projeto](#projeto)
+- [Componentes](#componentes)
 - [Problemas e Soluções](#problemas__solucoes)
 - [README do TSDX](#tsdx)
 
@@ -44,6 +45,50 @@
 
 ## StoryBook :
 > O Storybook é um workshop de front-end, sua função é ser uma ferramenta para desenvolver componentes, documentação e testes isoladamente.
+
+## Comando de postagem no NPM:
+> Para postar o projeto e atualizar no NPM foi utilizado o comando `npm publish --access=public` (Sempre lembrando de mudar a versão)
+
+---
+
+<h1 align='center' id='componentes'>> Componentes <<h1>
+
+---
+<h2 align='center'>-> LzBotao<h2>
+&nbsp;
+
+![Alt text](<src/assets/img/botao normal.png>)
+![Alt text](<src/assets/img/botao gota.png>)
+![Alt text](<src/assets/img/botao mdificado.png>)
+
+Chave|Valores| Valores
+----|--------|--------
+texto :| "O que vai dentro do botao"|
+forma :| 'default' | 'gota'
+tipo :| 'principal' | 'secundario'
+corPrimaria :| "Cor principal" |
+corSecundaria :| "Cor secundaria" |
+corHover :| "Cor do hover do botao" |
+onClick :| `() => void`
+
+&nbsp;
+
+---
+
+<h2 align='center'>-> LzInput<h2>
+&nbsp;
+
+![Alt text](<src/assets/img/input 1.png>)
+
+Chave|Valores| Valores|Valores|Valores
+----|--------|--------|------|------
+label :| "O que vai dentro do label"|
+type :| 'text' | 'email' | 'password' | 'date'
+value :| "Value"
+corPrimaria :| "Cor principal" |
+corSecundaria :| "Cor secundaria" |
+corBg :| "Cor do BG" |
+onClick :| `() => void`
 
 &nbsp;
 
