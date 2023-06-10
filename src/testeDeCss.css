@@ -1,3 +1,47 @@
 .teset{
    background-color: transparent;
 }
+
+
+/* Color Theme Swatches in Hex
+$Cor-Fonte-Analogo-1-hex: #F6E5DD;
+$Cor-Fonte-Analogo-2-hex: #D4C2BE;
+$Cor-Fonte-Analogo-3-hex: #EBEBEB;
+$Cor-Fonte-Analogo-4-hex: #D4BEC9;
+$Cor-Fonte-Analogo-5-hex: #F6DDF6;
+
+/* Color Theme Swatches in RGBA
+$Cor-Fonte-Analogo-1-rgba: rgba(246,229,221, 1);
+$Cor-Fonte-Analogo-2-rgba: rgba(212,194,190, 1);
+$Cor-Fonte-Analogo-3-rgba: rgba(235,235,235, 1);
+$Cor-Fonte-Analogo-4-rgba: rgba(212,190,201, 1);
+$Cor-Fonte-Analogo-5-rgba: rgba(246,221,246, 1);
+
+/* Color Theme Swatches in HSLA 
+$Cor-Fonte-Analogo-1-hsla: hsla(19, 58, 91, 1);
+$Cor-Fonte-Analogo-2-hsla: hsla(10, 20, 78, 1);
+$Cor-Fonte-Analogo-3-hsla: hsla(0, 0, 92, 1);
+$Cor-Fonte-Analogo-4-hsla: hsla(330, 20, 78, 1);
+$Cor-Fonte-Analogo-5-hsla: hsla(300, 58, 91, 1); */
+
+/* Color Theme Swatches in Hex 
+$Cor-destaque-Mono-1-hex: #AC72DB;
+$Cor-destaque-Mono-2-hex: #9484A2;
+$Cor-destaque-Mono-3-hex: #6F4A8E;
+$Cor-destaque-Mono-4-hex: #CAB4DB;
+$Cor-destaque-Mono-5-hex: #48305C;
+
+ Color Theme Swatches in RGBA 
+$Cor-destaque-Mono-1-rgba: rgba(172,114,219, 1);
+$Cor-destaque-Mono-2-rgba: rgba(148,132,162, 1);
+$Cor-destaque-Mono-3-rgba: rgba(111,74,142, 1);
+$Cor-destaque-Mono-4-rgba: rgba(202,180,219, 1);
+$Cor-destaque-Mono-5-rgba: rgba(72,48,92, 1);
+
+ Color Theme Swatches in HSLA 
+$Cor-destaque-Mono-1-hsla: hsla(273, 59, 65, 1);
+$Cor-destaque-Mono-2-hsla: hsla(272, 13, 57, 1);
+$Cor-destaque-Mono-3-hsla: hsla(272, 31, 42, 1);
+$Cor-destaque-Mono-4-hsla: hsla(273, 35, 78, 1);
+$Cor-destaque-Mono-5-hsla: hsla(272, 31, 27, 1);*/
+

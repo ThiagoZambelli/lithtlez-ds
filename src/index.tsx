@@ -20,3 +20,4 @@ export * from './componentes/LzNavbar';
 export * from './componentes/LzTag';
 export * from './componentes/LzGrupoDeOpcoes';
 export * from './componentes/LzInput';
+export * from './componentes/LzModal';
