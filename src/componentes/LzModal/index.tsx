@@ -2,16 +2,16 @@ import React, { ReactNode } from "react"
 import styled from "styled-components";
 
 export interface LzModalProps extends ICores {
-    children: ReactNode,
+    children?: ReactNode,
     titulo: string,
     aberta: boolean,
     aoFechar: () => void
 }
 
 interface ICores {
-    corPrimaria: string,
-    corSecundaria: string,
-    corBg: string
+    corPrimaria?: string,
+    corSecundaria?: string,
+    corBg?: string
 }
 
 const JanelaModal = styled.div<ICores>`
