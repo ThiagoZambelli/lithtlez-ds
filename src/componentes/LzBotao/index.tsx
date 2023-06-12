@@ -18,7 +18,7 @@ const BotaoEstilizado = styled.button<LzBotaoProps>`
     justify-content: center;
     column-gap: 1em;
     row-gap: 1em;
-    font-size: ${props => props.fSize !== 0 ? `${props.fSize}px` : '1.3rem'};
+    font-size: ${props => props.fSize === 0 ? `${props.fSize}px` : '1.3rem'};
     padding: .5em 1em;
     cursor: pointer;
     
