@@ -19,13 +19,20 @@ interface ICores {
 
 const LabelEstilizada = styled.label<ICores>`
     ${props => props.possueValor 
-        ? `transform: translateY(-50%) scale(0.8);
+        
+        ? `
+        top: 0;
+        position: absolute;
+        left: 16px;
+        transform: translateY(-50%) scale(0.8);
         background-color: ${props.corPrimaria};
         padding: 0 0.2em;
         color: ${props.corSecundaria};
         border-radius: 20%;
         padding: .2em 1em;`
-        :`top: 0;
+        
+        :`
+        top: 0;
         position: absolute;
         left: 16px;
         color: ${props.corPrimaria};
