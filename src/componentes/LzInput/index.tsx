@@ -9,9 +9,9 @@ export interface LzInputProps extends ICores {
 }
 
 interface ICores {
-    corPrimaria: string,
-    corSecundaria: string,
-    corBg: string
+    corPrimaria?: string,
+    corSecundaria?: string,
+    corBg?: string
 }
 
 
