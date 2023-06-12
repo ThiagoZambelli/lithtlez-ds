@@ -11,19 +11,28 @@ export interface LzInputProps extends ICores {
 interface ICores {
     corPrimaria?: string,
     corSecundaria?: string,
-    corBg?: string
+    corBg?: string,
+    possueValor?:boolean
 }
 
 
 
 const LabelEstilizada = styled.label<ICores>`
-    top: 0;
-    position: absolute;
-    left: 16px;
-    color: ${props => props.corPrimaria};
-    pointer-events: none;
-    transform: translateY(1rem);
-    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    ${props => props.possueValor 
+        ? `transform: translateY(-50%) scale(0.8);
+        background-color: ${props.corPrimaria};
+        padding: 0 0.2em;
+        color: ${props.corSecundaria};
+        border-radius: 20%;
+        padding: .2em 1em;`
+        :`top: 0;
+        position: absolute;
+        left: 16px;
+        color: ${props.corPrimaria};
+        pointer-events: none;
+        transform: translateY(1rem);
+        transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);`}
+    
 `
 const InputEstilizada = styled.input<ICores>`
     width: 100%;
@@ -46,6 +55,8 @@ const InputEstilizada = styled.input<ICores>`
         border-radius: 20%;
         padding: .2em 1em;
     }
+    
+}
 `
 const DivEstilizada = styled.div`
     position: relative; 
@@ -53,8 +64,10 @@ const DivEstilizada = styled.div`
 
 
 
-export const LzInput = ({ onChange, label = 'Falta o Label', value, type = "text", corPrimaria = "#6F4A8E", corSecundaria = "#EBEBEB", corBg = 'transparent'}: LzInputProps) => {
+export const LzInput = ({ onChange, label = 'Falta o Label', value, type = "text", corPrimaria = "#6F4A8E", corSecundaria = "#EBEBEB", corBg = 'transparent' }: LzInputProps) => {
 
+
+    const possueValor = value.trim() !== '';
 
 
     return (
@@ -65,12 +78,13 @@ export const LzInput = ({ onChange, label = 'Falta o Label', value, type = "text
                 onChange={event => onChange(event.target.value)}
                 corPrimaria={corPrimaria}
                 corSecundaria={corSecundaria}
-                corBg={corBg} 
+                corBg={corBg}
             />
-            <LabelEstilizada 
-                corPrimaria={corPrimaria} 
+            <LabelEstilizada
+                corPrimaria={corPrimaria}
                 corSecundaria={corSecundaria}
-                corBg={corBg} 
+                corBg={corBg}
+                possueValor={possueValor}
             >{label}</LabelEstilizada>
         </DivEstilizada>
     )
