@@ -13,7 +13,7 @@ const CardEstilizado = styled.section<LzCardProps>`
         ? props.bgColor : '#FFFFFF'};
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    ${props => props.className ? props.className : ''} 
+    ${props => props.className ? props.className : ''}
 `
 
 export const LzCard = ({ children, bgColor, className }: LzCardProps) => {

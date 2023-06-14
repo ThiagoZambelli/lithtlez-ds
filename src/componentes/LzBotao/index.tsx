@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled, { css } from 'styled-components';
 
 export interface LzBotaoProps {
-    texto?: string,
+    children?: ReactNode,
     forma?: 'default' | 'gota',
     tipo?: 'principal' | 'secundario',
     corPrimaria?: string,
@@ -63,10 +63,10 @@ const BotaoEstilizado = styled.button<LzBotaoProps>`
     }
 `
 
-export const LzBotao = ({ fSize=0, corPrimaria, corSecundaria, texto, onClick, tipo = 'principal', forma = 'default', corHover }: LzBotaoProps) => {
+export const LzBotao = ({ fSize=0, corPrimaria, corSecundaria, children, onClick, tipo = 'principal', forma = 'default', corHover }: LzBotaoProps) => {
     return (
         <BotaoEstilizado fSize={fSize} onClick={onClick} tipo={tipo} forma={forma} corPrimaria={corPrimaria} corSecundaria={corSecundaria} corHover={corHover}>
-            {texto}
+            {children}
         </BotaoEstilizado>
     )
 }

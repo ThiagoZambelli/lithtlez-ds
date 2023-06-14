@@ -17,5 +17,6 @@ Normal.args = {
 export const BgAlterado = Template.bind({})
 BgAlterado.args = {
     children: 'Aqui um card BgAlterado',
-    bgColor: '#40F6C0'
+    bgColor: '#40F6C0',
+    className:'opacity: .2;'
 } as LzCardProps
