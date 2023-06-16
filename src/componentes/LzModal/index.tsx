@@ -16,6 +16,7 @@ interface ICores {
 
 const JanelaModal = styled.div<ICores>`
     position: fixed;
+    z-index: 9999;
     padding: 64px;
     background: ${props => props.corSecundaria};
     box-shadow: 4px 4px 24px -4px rgba(0, 0, 0, 0.15);
