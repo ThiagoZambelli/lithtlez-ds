@@ -4,7 +4,8 @@ import styled from 'styled-components';
 export interface LzCardProps {
     children: ReactNode,
     bgColor?: string,
-    className?: string
+    className?: string,
+    onClick?: () => void,
 }
 
 const CardEstilizado = styled.section<LzCardProps>`
@@ -16,9 +17,9 @@ const CardEstilizado = styled.section<LzCardProps>`
     ${props => props.className ? props.className : ''}
 `
 
-export const LzCard = ({ children, bgColor, className }: LzCardProps) => {
+export const LzCard = ({onClick, children, bgColor, className }: LzCardProps) => {
     return (
-        <CardEstilizado className={className} bgColor={bgColor}>
+        <CardEstilizado onClick={onClick} className={className} bgColor={bgColor}>
             {children}
         </CardEstilizado>
     )
