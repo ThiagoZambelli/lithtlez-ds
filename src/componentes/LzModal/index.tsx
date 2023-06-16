@@ -27,6 +27,7 @@ const JanelaModal = styled.div<ICores>`
 `
 const FundoModal = styled.div<ICores>`
     position: fixed;
+    z-index: 9998;
     left: 0px;
     right: 0px;
     top: 0px;

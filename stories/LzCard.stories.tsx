@@ -7,7 +7,7 @@ export default {
     component: LzCard
 } as ComponentMeta<typeof LzCard>
 
-const Template: ComponentStory<typeof LzCard> = (args) => <LzCard {...args}/>
+const Template: ComponentStory<typeof LzCard> = (args) => <LzCard {...args} />
 
 export const Normal = Template.bind({})
 Normal.args = {
@@ -18,5 +18,6 @@ export const BgAlterado = Template.bind({})
 BgAlterado.args = {
     children: 'Aqui um card BgAlterado',
     bgColor: '#40F6C0',
-    className:'opacity: .2;'
+    className: 'opacity: .2;',
+    onClick: () => {console.log('oi') }
 } as LzCardProps
