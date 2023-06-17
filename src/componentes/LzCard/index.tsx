@@ -9,7 +9,6 @@ export interface LzCardProps {
 }
 
 const CardEstilizado = styled.section<LzCardProps>`
-    padding: 48px;
     background: ${(props: LzCardProps) => props.bgColor
         ? props.bgColor : '#FFFFFF'};
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
