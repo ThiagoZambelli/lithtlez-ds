@@ -52,7 +52,7 @@ const InputEstilizada = styled.input<ICores>`
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus {
         outline: ${props => props.corBg};
-        border: 1.5px solid ${props => props.corSecundaria};
+        border: 2px solid ${props => props.corSecundaria};
     }
     &:focus ~ label {
         transform: translateY(-50%) scale(0.8);
