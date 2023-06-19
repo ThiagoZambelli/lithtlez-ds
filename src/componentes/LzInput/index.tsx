@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export interface LzInputProps extends ICores {
     label: string;
-    type?: 'text' | 'email' | 'password' | 'date';
+    type?: 'text' | 'email' | 'password' | 'date'| 'number';
     onChange: (value: string) => void;
     value: string;
 }
