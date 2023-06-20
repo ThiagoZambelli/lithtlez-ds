@@ -33,6 +33,7 @@ const LabelEstilizada = styled.label<ICores>`
         padding: .2em 1em;`
         
         :`
+        font-size: ${props.fontSize ? `${props.fontSize}px` : '1rem' };
         top: 0;
         position: absolute;
         left: 16px;
