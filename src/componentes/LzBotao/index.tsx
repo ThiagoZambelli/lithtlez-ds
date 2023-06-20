@@ -9,7 +9,7 @@ export interface LzBotaoProps {
     corSecundaria?: string,
     corHover?: string,
     onClick?: () => void,
-    fSize?: number,
+    fontSize?: number,
 }
 
 const BotaoEstilizado = styled.button<LzBotaoProps>`
@@ -18,7 +18,7 @@ const BotaoEstilizado = styled.button<LzBotaoProps>`
     justify-content: center;
     column-gap: 1em;
     row-gap: 1em;
-    font-size: ${props => props.fSize !== 0 ? `${props.fSize}px` : '1.3rem'};
+    font-size: ${props => props.fontSize !== 0 ? `${props.fontSize}px` : '1.3rem'};
     padding: .5em 1em;
     cursor: pointer;
     
@@ -63,9 +63,9 @@ const BotaoEstilizado = styled.button<LzBotaoProps>`
     }
 `
 
-export const LzBotao = ({ fSize=0, corPrimaria, corSecundaria, children, onClick, tipo = 'principal', forma = 'default', corHover }: LzBotaoProps) => {
+export const LzBotao = ({ fontSize=0, corPrimaria, corSecundaria, children, onClick, tipo = 'principal', forma = 'default', corHover }: LzBotaoProps) => {
     return (
-        <BotaoEstilizado fSize={fSize} onClick={onClick} tipo={tipo} forma={forma} corPrimaria={corPrimaria} corSecundaria={corSecundaria} corHover={corHover}>
+        <BotaoEstilizado fontSize={fontSize} onClick={onClick} tipo={tipo} forma={forma} corPrimaria={corPrimaria} corSecundaria={corSecundaria} corHover={corHover}>
             {children}
         </BotaoEstilizado>
     )

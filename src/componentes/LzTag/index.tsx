@@ -5,7 +5,7 @@ export interface LzTagProps {
     children: ReactNode,
     bgColor?: string,
     color?: string,
-    fSize?: number,
+    fontSize?: number,
     onClick?: () => void
 }
 
@@ -18,16 +18,16 @@ const TagEstilizado = styled.div<LzTagProps>`
     max-width: max-content;
     border-radius: 1em;
     cursor: pointer;
-    font-size: ${(props : LzTagProps) => props.fSize ? `${props.fSize}px` : "1rem"};
+    font-size: ${(props : LzTagProps) => props.fontSize ? `${props.fontSize}px` : "1rem"};
     padding: 1em;
     background-color: ${(props : LzTagProps) => props.bgColor ? props.bgColor : "#6F4A8E"};
     color: ${(props : LzTagProps) => props.color ? props.color : "#EBEBEB"} ;
       
 `
 
-export const LzTag = ({onClick, children, bgColor, color, fSize} : LzTagProps) => {
+export const LzTag = ({onClick, children, bgColor, color, fontSize} : LzTagProps) => {
     return (
-        <TagEstilizado onClick={onClick} bgColor={bgColor} color={color} fSize={fSize}>
+        <TagEstilizado onClick={onClick} bgColor={bgColor} color={color} fontSize={fontSize}>
             {children}
         </TagEstilizado>
     )
