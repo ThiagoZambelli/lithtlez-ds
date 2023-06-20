@@ -12,6 +12,7 @@ interface ICores {
     corPrimaria?: string,
     corSecundaria?: string,
     corBg?: string,
+    fontSize: number | null,
     possueValor?:boolean
 }
 
@@ -47,7 +48,7 @@ const InputEstilizada = styled.input<ICores>`
     border-radius: 1rem;
     background-color: ${props => props.corBg};
     padding: 1rem;
-    font-size: 1rem;
+    font-size: ${props => props.fontSize ? `${props.fontSize}px` : '1rem' };
     color: ${props => props.corPrimaria};
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus {
@@ -71,7 +72,7 @@ const DivEstilizada = styled.div`
 
 
 
-export const LzInput = ({ onChange, label = 'Falta o Label', value, type = "text", corPrimaria = "#6F4A8E", corSecundaria = "#EBEBEB", corBg = 'transparent' }: LzInputProps) => {
+export const LzInput = ({ fontSize, onChange, label = 'Falta o Label', value, type = "text", corPrimaria = "#6F4A8E", corSecundaria = "#EBEBEB", corBg = 'transparent' }: LzInputProps) => {
 
 
     const possueValor = value.trim() !== '';
@@ -80,6 +81,7 @@ export const LzInput = ({ onChange, label = 'Falta o Label', value, type = "text
     return (
         <DivEstilizada>
             <InputEstilizada
+                fontSize={fontSize}
                 value={value}
                 type={type}
                 onChange={event => onChange(event.target.value)}
@@ -88,6 +90,7 @@ export const LzInput = ({ onChange, label = 'Falta o Label', value, type = "text
                 corBg={corBg}
             />
             <LabelEstilizada
+                fontSize={fontSize}
                 corPrimaria={corPrimaria}
                 corSecundaria={corSecundaria}
                 corBg={corBg}

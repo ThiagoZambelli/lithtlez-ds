@@ -6,7 +6,7 @@ export interface LzOpcaoProps {
     titulo?: string,
     valor?: string,
     tipo?: string,
-    corPrincipal?: string,
+    corPrimaria?: string,
     corSecundaria?: string,
     selecionado?: boolean,
     id?: number,
@@ -28,9 +28,9 @@ const SectionEstilizada = styled.section<LzOpcaoProps>`
     margin: 1em 0;
     cursor: pointer;
     transition: .5s;
-    border: 2px solid ${props => props.selecionado ? props => props.corSecundaria : props => props.corPrincipal};
-    color: ${props => props.selecionado ? props => props.corSecundaria : props => props.corPrincipal};
-    background-color: ${props => props.selecionado ? props => props.corPrincipal : props => props.corSecundaria};
+    border: 2px solid ${props => props.selecionado ? props => props.corSecundaria : props => props.corPrimaria};
+    color: ${props => props.selecionado ? props => props.corSecundaria : props => props.corPrimaria};
+    background-color: ${props => props.selecionado ? props => props.corPrimaria : props => props.corSecundaria};
     
     header, footer{
         font-size: 12px
@@ -64,7 +64,7 @@ export const LzGrupoDeOpcoes = ({ opcoes, onChange, valorPadrao }: LzGrupoDeOpco
                     onClick={() => selecionar(opcao)}
                     selecionado={selecionado?.id === opcao.id}
                     key={opcao.id}
-                    corPrincipal={opcao.corPrincipal === '' ? opcao.corPrincipal : "#6F4A8E"}
+                    corPrimaria={opcao.corPrimaria === '' ? opcao.corPrimaria : "#6F4A8E"}
                     corSecundaria={opcao.corSecundaria === '' ? opcao.corSecundaria : '#EBEBEB'}
                 >
                     <header>
