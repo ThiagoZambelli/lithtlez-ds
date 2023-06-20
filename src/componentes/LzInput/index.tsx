@@ -6,6 +6,7 @@ export interface LzInputProps extends ICores {
     type?: 'text' | 'email' | 'password' | 'date'| 'number' |'password';
     onChange: (value: string) => void;
     value: string;
+    required?: boolean
 }
 
 interface ICores {
@@ -73,7 +74,7 @@ const DivEstilizada = styled.div`
 
 
 
-export const LzInput = ({ fontSize, onChange, label = 'Falta o Label', value, type = "text", corPrimaria = "#6F4A8E", corSecundaria = "#EBEBEB", corBg = 'transparent' }: LzInputProps) => {
+export const LzInput = ({required, fontSize, onChange, label = 'Falta o Label', value, type = "text", corPrimaria = "#6F4A8E", corSecundaria = "#EBEBEB", corBg = 'transparent' }: LzInputProps) => {
 
 
     const possueValor = value.trim() !== '';
@@ -82,6 +83,7 @@ export const LzInput = ({ fontSize, onChange, label = 'Falta o Label', value, ty
     return (
         <DivEstilizada>
             <InputEstilizada
+                required={required}
                 fontSize={fontSize}
                 value={value}
                 type={type}
