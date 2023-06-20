@@ -12,7 +12,7 @@ interface ICores {
     corPrimaria?: string,
     corSecundaria?: string,
     corBg?: string,
-    fontSize: number | null,
+    fontSize?: number | null,
     possueValor?:boolean
 }
 
